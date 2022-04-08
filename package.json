@@ -10,7 +10,7 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "cypress": "cypress run" 
+    "cypress": "cypress run"
   },
   "repository": {
     "type": "git",
