@@ -7,5 +7,20 @@ describe("Testing the index.html page", () => {
         // THEN: They should see the welecome message
         cy.get("h1").should("have.text", "Who is your favorite pokemon?")
     })
- })
+
  
+     // The placeholder text in the input box should say: "Enter a pokemon name (required)"
+   it("The placeholder text should say 'Enter a pokemon name'", ()=> {
+    // GIVEN:  The user is not on the website
+    // WHEN The user lands on the webbsite
+    cy.visit("/")
+    // THEN: The placeholder of the input box should say "Enter a pokmeon name (required)"
+    // - go find an input box, and then locate the attribute called placeholder
+    cy.get("input#txt-pokemon-name").invoke("attr", "placeholder")
+        .should("contain", "Enter a pokemon name (required)")
+    })
+
+
+
+
+})
