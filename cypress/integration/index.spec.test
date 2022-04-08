@@ -17,7 +17,7 @@ describe("Testing the index.html page", () => {
     // THEN: The placeholder of the input box should say "Enter a pokmeon name (required)"
     // - go find an input box, and then locate the attribute called placeholder
     cy.get("input#txt-pokemon-name").invoke("attr", "placeholder")
-        .should("contain", "Enter a pokemon name (required)")
+        .should("contain", "Enter a pokemon name")
     })
 
 
