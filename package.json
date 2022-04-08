@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/c0763131/favorite-pokemon#readme",
   "devDependencies": {
-    "cypress": "^9.5.3"
+    "cypress": "^9.5.3",
+    "netlify-plugin-cypress": "^2.2.0"
   }
 }
